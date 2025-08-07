@@ -6,7 +6,7 @@ class Server extends EnvoyerResource
 {
     protected string $path = 'servers';
 
-        public function refresh(int $identifier):? object
+        public function refresh(int $identifier): ?object
     {
         $this->uri()->addPath(
             "{$this->uri()->path()}/{$identifier}/refresh"
